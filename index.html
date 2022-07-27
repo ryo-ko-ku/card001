@@ -7,53 +7,74 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>newsWeb</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Simple line icons アイコンCSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+   <!--変更点-->
+
+
+
     <!-- Google fonts　フォント-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+
+
+    <!-- 変更点　CSS相対パスなのと数字に変更することに注意-->
+    <!--font-awesome&css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <!-- Core theme CSS (includes Bootstrap)CSS適用-->
-    <link href="https://ryo-ko-ku.github.io/card001/StyleSheet1.css" rel="stylesheet" />
+    <link href="StyleSheet2.css" rel="stylesheet" />
+
+
 </head>
+
+
+   
 <body>
     <div class="container text-center">
+
         <div class="row">
+
+
+            <!-- 変更点-->
+            <h3>画像をダブルクリックしていいね！<i class="fas fa-heart"></i>してね</h3>
+            <small>You liked it <span id="times">0</span>times</small>
+
             <div class="col-sm12">
-                <img src="image002.jpg" alt="Alternate Text"  id="image"/>
+
+                <!--変更点　class-->
+                <div class="img-container">
+                    <div class="loveMe" id="image"></div>
+                </div>
                 <h2>うそ！　うちの子の仕業！?</h2>
-                <p>最近街で柴犬を見かける機会が多くなっている気がするが、そんな柴人口増加とともに出てくる問題がある。<br />
-                可愛く、尊い彼らが起こす問題、それは「いたずら」だ。笑って済ませられる範囲のいたずらならば話のタネだが、今回は黒柴もちたろうくん（3才）の飼い主である伊藤家に話を聞いた。<br />
-                                                                                                     <br />
-                ---とってもかわいらしいもちたろうくんですがどんな「いたずら」を？<br />
-                                                   <br />
-                ---ある休日のことです、たまには家族で外食にでも行こうかという話になり、もちたろうに自宅でお留守番してもらって出かけました。<br />
-                おいしくご飯を食べた後、もちたろうにもお留守番のご褒美にと、とっておきのおやつを買って意気揚々帰ってきたら、そこはジャングルでした。<br />
-                私たちも「んっ？」となり頭がフリーズしますが、脳がゆっくりと認識します。「これは我が家だと」<br />
-                まず目につくのが床一面に散らばったトイレットペーパーの残骸。スリッパだったであろうものや、綿が抜けたおもちゃの残骸などもところどころありました。<br />
-                そしてなにより頭を抱えたのが、壁のクロスがべりべりに、剥がされていることでした。<br />
-                我が家ではこの事件以降、決してもちたろうを家で一人にしないと固く誓いました。<br />
-                                                      <br />
-                ---ああっ、目に浮かぶような地獄絵図ですね！　もちたろうくんのその時の様子は？<br />
-                                                        <br />
-                ---「あっ、おかえりー」ぐらいのテンションでソファーから顔を出していました。<br />
-                その悪びれていない（むしろ誇らしげな顔）をみて毒気を抜かれた私たち夫婦は怒る気力も削がれました（笑）<br />
-                                                                  <br />
-                今なおやんちゃボーイなもちたろうくん、今回の話を伺って、私は思った。<br />
-                決して柴犬様を寂しがらせてはならない、と。
+                <p>
+                    最近街で柴犬を見かける機会が多くなっている気がするが、そんな柴人口増加とともに出てくる問題がある。<br />
+                    可愛く、尊い彼らが起こす問題、それは「いたずら」だ。笑って済ませられる範囲のいたずらならば話のタネだが、今回は黒柴もちたろうくん（3才）の飼い主である伊藤家に話を聞いた。<br />
+                    <br />
+                    ---とってもかわいらしいもちたろうくんですがどんな「いたずら」を？<br />
+                    <br />
+                    ---ある休日のことです、たまには家族で外食にでも行こうかという話になり、もちたろうに自宅でお留守番してもらって出かけました。<br />
+                    おいしくご飯を食べた後、もちたろうにもお留守番のご褒美にと、とっておきのおやつを買って意気揚々帰ってきたら、そこはジャングルでした。<br />
+                    私たちも「んっ？」となり頭がフリーズしますが、脳がゆっくりと認識します。「これは我が家だと」<br />
+                    まず目につくのが床一面に散らばったトイレットペーパーの残骸。スリッパだったであろうものや、綿が抜けたおもちゃの残骸などもところどころありました。<br />
+                    そしてなにより頭を抱えたのが、壁のクロスがべりべりに、剥がされていることでした。<br />
+                    我が家ではこの事件以降、決してもちたろうを家で一人にしないと固く誓いました。<br />
+                    <br />
+                    ---ああっ、目に浮かぶような地獄絵図ですね！　もちたろうくんのその時の様子は？<br />
+                    <br />
+                    ---「あっ、おかえりー」ぐらいのテンションでソファーから顔を出していました。<br />
+                    その悪びれていない（むしろ誇らしげな顔）をみて毒気を抜かれた私たち夫婦は怒る気力も削がれました（笑）<br />
+                    <br />
+                    今なおやんちゃボーイなもちたろうくん、今回の話を伺って、私は思った。<br />
+                    決して柴犬様を寂しがらせてはならない、と。
 
                 </p>
             </div>
-            
-                <div class="col-sm-4 text-right">
-                    <button type="button" onclick="location.href='https://ryo-ko-ku.github.io/newsWeb.ver1.00'">記事に戻る</button>
-                </div>
-            
+
+            <div class="col-sm-4 text-right">
+                <button type="button" onclick="location.href='https://ryo-ko-ku.github.io/newsWeb.ver1.00'">記事に戻る</button>
+            </div>
+
         </div>
     </div>
     
-   
+    <!-- 変更点　相対パスと数字に注意-->
+    <script src="Script2.js"></script>
 </body>
 </html>
